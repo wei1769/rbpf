@@ -35,7 +35,7 @@ thiserror = "1.0.26"
 winapi = { version = "0.3", features = ["memoryapi", "sysinfoapi", "winnt", "errhandlingapi"], optional = true }
 
 [target.'cfg(not(windows))'.dependencies]
-libc = { version = "0.2", optional = true }
+libc = { version = "0.2.155", optional = true }
 
 [features]
 default = ["jit"]
